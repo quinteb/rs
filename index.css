@@ -1,0 +1,138 @@
+/*          _      __  ____ __ 
+ ___ ___ __(_)__  / /_|_  // / 
+/ _ `/ // / / _ \/ __//_ </ _ \
+\_, /\_,_/_/_//_/\__/____/_.__/
+ /_/                            
+ 
+ https://github.com/quinteb
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f8ff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #70caff; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #70caff; 
+    transform: scale(1.1);
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #70caff; 
+    margin-bottom: 15px;
+}
+
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    background-color: #e0f7fa; /* ligt Cyan */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 45%; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #70caff; /* licht blouw */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* links small scherm */
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    .service {
+        flex: 1 1 100%; /* tabald klein scherm */
+    }
+}
+
+/* Canvas Styles */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* stuurt het canvas naar de achterkant */
+}
